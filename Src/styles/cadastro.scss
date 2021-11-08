@@ -2,22 +2,22 @@
 
 $background: #ffffff;
 $btn-color: #4d88c0;
+$border-color: #000000;
+$border-color-grey: #2c2b2b;
 
 .container-flex {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 100%;
-  margin-top: 0.5%;
+  margin-top: 2%;
+  height: 100vh;
 }
 .column-right {
   flex: 2;
-  border: 1px solid black;
   background-color: $background;
 }
+
 .column-left {
   flex: 1;
-  border: 1px solid black;
   background-color: $background;
 }
 
@@ -28,29 +28,35 @@ $btn-color: #4d88c0;
   padding: 10px;
 
   .img {
-    margin-top: 10px;
-    width: 40%;
+    margin-top: 5px;
+    width: 50%;
   }
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  align-items: right;
-  margin: 20px auto;
-  padding: 20px;
+.form-area {
+  margin-top: 80px;
 
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px;
+    box-shadow: 0 20px 30px -20px $border-color,
+      0 20px 30px 0px $border-color-grey;
+  }
   label {
     margin-top: 10px;
   }
+
   .form-field {
     margin-top: 2px;
+    padding: 5px;
   }
 
   .btn {
     background-color: $btn-color;
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 5px;
     color: $background;
     border: none;
