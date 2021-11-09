@@ -6,35 +6,37 @@
     <meta="viewport" content="width=device-width, initial-scale=1.0">
     <title>EldoradoFlix Home</title>
     <link rel="stylesheet" href="Src/styles/home.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
     <!--Cabeçalho-->
-    <header>
+    <header class="bg-image">
         <nav>  
             <ul class="container">  
-              <li>Home</li>  
-              <li>Profile</li>  
-              <li class="search">  
+              <li><i class='bx bx-home'></i>Home</li>  
+              <li><i class='bx bx-movie' ></i>Meus filmes</li>  
+              <li class="search"><i class='bx bx-search-alt-2'></i>  
                 <input type="text" class="search-input" placeholder="Search">  
               </li>  
-              <li>Logout</li>  
+              <li><i class='bx bxs-door-open'></i>Logout</li>  
             </ul>  
           </nav>
+
+          <div class="banner">
+                BANNER
+          </div>
+          
     </header>
 
     <section>
-     <!--Cards de filmes-->
-    
-    <div class="banner">
-        BANNER
-    </div>
-    
+    <!--Cards de filmes-->
     <div class="movie-grade">  
         
         <div class="grade">
             
             <div class="separator">
-                <h1>FILMES ONLINE</h1>
+                <h1><i class='bx bx-camera-movie'></i>FILMES ONLINE</h1>
             </div>
 
             <div class="card">
@@ -102,11 +104,6 @@
                     <button>Assistir</button>
                 </div>
             </div>
-            
-            <div class="separator">
-                <h1>FILMES ONLINE</h1>
-            </div>
-    <!--</div>-->
         <!--<div class="grade">-->
 
             <!--<div class="separator">
@@ -179,22 +176,45 @@
                 </div>
             </div>
             <div class="separator">
-                <h1>FILMES ONLINE</h1>
+                <ul class="pagination">
+                    
+                    <li><a href="#">«</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a class="active" href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">»</a></li>
+                  </ul>
             </div>
     </div>
     </section>
-    <footer>
-        <div class="footer">
-        <div class="f-display">
-            <h1>Contato</h1>
+    <footer class="footer">
+        <div class="f-container">
+            <div class="footer-row">
+                
+                <div class="footer-col">
+                    <h1>Sigam nossas Redes Sociais!</h1>
+                </div>
+
+                <div class="footer-col">
+                    <h1><i class='bx bxl-instagram' ></i>Instagram</h1>
+                </div>
+                <div class="footer-col">
+                    <h1><i class='bx bxl-facebook-square'></i>Facebook</h1>
+                </div>
+                
+                <div class="footer-col">
+                    <h1><i class='bx bxl-twitter' ></i>Twitter</h1>
+                </div>
+            </div>
+            <div>
+                <h2>Created by Paulo Bittencourt, Sidia Souza e Carlos olimpio</h2>
+            </div>
         </div>
-        <div class="f-display">
-            <h1>Categorias</h1>
-        </div>
-        <div class="f-display">
-            <h1>Redes Sociais</h1>
-        </div>
-        </div>
+        
     </footer>
 </body>
 </html>
