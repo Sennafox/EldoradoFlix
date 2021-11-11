@@ -33,13 +33,14 @@
     <!--Cards de filmes-->
     <div class="movie-grade">  
         
-        <div class="grade">
+        <div class="grade" id="grade">
             
             <div class="separator">
                 <h1><i class='bx bx-camera-movie'></i>FILMES ONLINE</h1>
+                <button class="button" id="button" onclick="addBloco()">Adicionar Bloco</button>
             </div>
 
-            <div class="card">
+            <div class="card" id="card">
         
                 <div class="card-description">
                     <h1>Nome do Filme</h1>
@@ -52,8 +53,9 @@
                 <div class="button">
                     <button>Assistir</button>
                 </div>
-                
-            </div>
+                </div>
+
+            <!--</div>
             <div class="card">
         
                 <div class="card-description">
@@ -105,14 +107,14 @@
                 <div class="button">
                     <button>Assistir</button>
                 </div>
-            </div>
+            </div>-->
         <!--<div class="grade">-->
 
             <!--<div class="separator">
                 <h1>FILMES ONLINE</h1>
             </div>-->
 
-            <div class="card">
+            <!--<div class="card">
         
                 <div class="card-description">
                     <h1>Nome do Filme</h1>
@@ -176,21 +178,21 @@
                 <div class="button">
                     <button>Assistir</button>
                 </div>
-            </div>
-            <div class="separator">
-                <ul class="pagination">
-                    
-                    <li><a href="#">«</a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a class="active" href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">6</a></li>
-                    <li><a href="#">7</a></li>
-                    <li><a href="#">»</a></li>
-                  </ul>
-            </div>
+            </div>-->
+
+    </div>
+    <div class="pag">
+        <ul class="pagination">
+            <li><a href="#">«</a></li>
+            <li><a href="#">1</a></li>
+            <li><a class="active" href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">»</a></li>
+          </ul>
     </div>
     </section>
     <footer class="footer">
@@ -218,5 +220,7 @@
         </div>
         
     </footer>
+    <script src="add-bloco.js" type="text/javascript"></script>
+    <script src="remove-bloco.js" type="text/javascript"></script>
 </body>
 </html>

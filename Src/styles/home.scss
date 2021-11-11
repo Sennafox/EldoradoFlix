@@ -78,8 +78,6 @@ ul{
 .movie-grade{
   width: 100%;
   margin: auto;
-  
-  
 }
 
 .grade {
@@ -93,9 +91,10 @@ ul{
 }
 
 .card {
-  display: inline-grid;
+  display: flex;
   text-align: center;
-  margin: 15px;
+  flex-direction: column;
+  margin: auto;
   border-radius: 4px;
   box-shadow: 0 0 5px #FF9D1C;
   background-color: #262627;
@@ -130,6 +129,25 @@ ul{
 
 .button {
   padding:10px;
+}
+
+.button1 {
+  padding:2px;
+  font-size: .5em;
+  margin: auto;
+  display: inline-block;
+
+  button {
+    background-color: #25F7C6;
+    color: #FF9D1C;
+
+    &:hover {
+      background-color: #FF9D1C;
+      color:  #25F7C6;
+    }
+  }
+
+
 }
 
 button {
@@ -206,6 +224,12 @@ h2{
   font-size: 0.7em;
 }
 
+.pag{
+  display: flex;
+  justify-content:space-around;
+  width: 100%;
+  background-color: #262627;
+}
 
 ul.pagination {
 
