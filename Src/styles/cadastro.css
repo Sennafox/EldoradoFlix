@@ -29,12 +29,12 @@ img {
 }
 .container .wallpaper {
   background-image: url(/Src/images/pexels-pavel-1200.jpg);
-  background-size: cover;
   height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: cover;
 }
 .container .wallpaper .form {
   color: var(--first-color);
@@ -56,7 +56,7 @@ img {
   margin-right: auto;
   padding: 10px;
   width: 100%;
-  order: 1px solid var(--fourth-color);
+  border: 1px solid var(--fourth-color);
   background-color: var(--first-color);
   border-radius: 15px;
 }
@@ -65,6 +65,13 @@ img {
   color: whitesmoke;
   font-weight: bold;
   font-size: 1rem;
+}
+.container .wallpaper .form .cancelar {
+  background-color: whitesmoke;
+  margin-top: 10px;
+}
+.container .wallpaper .form .cancelar a {
+  color: var(--fourth-color);
 }
 .container .wallpaper .form input {
   border-radius: 10px;
