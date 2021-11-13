@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+}
+
+/*Navbar*/
+
+ul{
+  width:97%;
+  height: 10vh;
+  margin-top:0;
+}
+.container {
+  display: flex;
+  font-size: 20px;
+  color: #FF9D1C;
+  align-items: center;
+  border-bottom: 2px solid #262627;
+  box-shadow: 1px 1px 0 0 rgba(125, 123, 124, 0.5);
+  background-color: rgba(38, 38, 39, 0.9);
+}
+
+.container > li {
+  flex: 1;
+  list-style: none;
+  font-weight: bold;
+  flex-wrap: wrap;
+  i {
+    margin: 3px 2px 0 0;
+    padding: 2px;
+  }
+
+}
+
+.search {  
+  flex: 1;  
+}
+
+.bg-image{
+  background-image: url(/Src/images/pexels-pavel-1200.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*banner*/
+
+.banner{
+  width: 100%;
+  height: 80vh;
+}
+
+/*Separador*/
+
+.separator {
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    padding: 15px;
+
+    i{
+      margin-right: 5px;
+    }
+  }
+
+}
+
+
+/*Section*/
+
+.movie-grade{
+  width: 100%;
+  margin: auto;
+}
+
+.grade {
+  display: flex;  
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color:#262627;
+  box-shadow: inset 0 3px 3px #101011;
+  padding: 5px;
+}
+
+.card {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #FF9D1C;
+  background-color: #262627;
+  background-size: contain;
+  
+  &:hover {
+    box-shadow: inset 0px 0px 5px 1px rgba(125, 123, 124, 1);
+  }
+
+  img{
+    width: 100%;
+  }
+
+}
+
+.card-description {
+ 
+  text-align: center;
+  color: #FF9D1C ;
+  margin: auto;
+  max-width: 200px;
+  min-width: 200px;
+  width: 25%;
+  padding: 2px;
+  font-size: 0.8em;
+  transition: 0.3s;
+
+  &:hover { 
+    opacity: 0.05;
+  }
+}
+
+.button {
+  padding:10px;
+}
+
+.button1 {
+  padding:2px;
+  font-size: .5em;
+  margin: auto;
+  display: inline-block;
+
+  button {
+    background-color: #25F7C6;
+    color: #FF9D1C;
+
+    &:hover {
+      background-color: #FF9D1C;
+      color:  #25F7C6;
+    }
+  }
+
+
+}
+
+button {
+  border-radius: 20px;
+  background-color: #FF9D1C;
+  color: white;
+  border: none;
+  margin: 2px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  font-family: 'mulish', sans-serif;
+  font-weight: bold;
+  
+
+  h1{
+    color:#FF9D1C
+  }
+
+  a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 5px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+
+  }
+  &:hover {
+    background-color:#262627;
+    opacity:0.9;
+    color:#FF9D1C;
+    box-shadow: 0 0 5px #FF9D1C
+  }
+}
+
+
+.footer{
+  background-color: #FF9D1C;
+  padding: 10px 0;
+  line-height: 1.5;
+}
+
+.f-container{
+  background-color: #FF9D1C;
+  width: 100%;
+  margin: auto;
+  
+}
+
+.footer-row{
+  text-align: center;
+  background-color: #FF9D1C;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.footer-col {
+  min-width: 220px;
+
+  &:hover {
+    color:azure;
+  }
+
+}
+
+h2{
+  text-align: center;
+  font-size: 0.7em;
+}
+
+.pag{
+  display: flex;
+  justify-content:space-around;
+  width: 100%;
+  background-color: #262627;
+}
+
+ul.pagination {
+
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+    margin: auto;
+    align-items: center;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      a {
+        color: #FF9D1C;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid #ddd;
+      }
+    }
+  }
+
+ul.pagination{
+    li{
+      a.active{
+          background-color: #FF9D1C;
+          color: white;
+          border: 1px solid #FF9D1C;
+      }
+
+      a {
+      &:hover {
+        &:not(active){
+          background-color: #ddd;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px){
+  .container {
+    flex-direction: column;
+    height: 25vh;
+}
+}
+
+@media (max-width: 400px){
+  .footer {
+    flex-direction: column;
+  }
+}
