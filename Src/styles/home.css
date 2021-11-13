@@ -112,12 +112,12 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: auto;
+  text-align: center;
+  margin: 0;
   border-radius: 4px;
   -webkit-box-shadow: 0 0 5px #FF9D1C;
           box-shadow: 0 0 5px #FF9D1C;
@@ -136,6 +136,13 @@ ul {
 
 .card-description {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #FF9D1C;
   margin: auto;
   max-width: 200px;

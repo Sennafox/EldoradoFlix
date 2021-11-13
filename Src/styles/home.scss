@@ -92,9 +92,9 @@ ul{
 
 .card {
   display: flex;
-  text-align: center;
   flex-direction: column;
-  margin: auto;
+  text-align: center;
+  margin: 0;
   border-radius: 4px;
   box-shadow: 0 0 5px #FF9D1C;
   background-color: #262627;
@@ -113,6 +113,8 @@ ul{
 .card-description {
  
   text-align: center;
+  display: flex;
+  flex-direction: column;
   color: #FF9D1C ;
   margin: auto;
   max-width: 200px;
