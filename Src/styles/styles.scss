@@ -17,9 +17,12 @@
     height: auto;
   }
   
-.container {
-    width: 100vw;
-    display: flex;
-    margin-top: 4.5rem;
 
-} 
+
+:root{
+    --first-color: #FF9D1C;
+    --second-color: #D9B002;
+    --thirth-color: #C9F00A;
+    --fourth-color: #1b1c1b;
+    --fifth-color: #19FAAE;
+}

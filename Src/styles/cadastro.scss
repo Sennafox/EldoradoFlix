@@ -1,110 +1,88 @@
-@use "styles";
 
-$background: #ffffff;
-$orange-color: #ff9d1c;
-$border-color: #000000;
-$grey_color: #3e3e3d;
-$border-color-grey: #2c2b2b;
-
-header {
-  background: $background;
-  padding: 1em 0;
-}
-.nav {
-  display: flex;
-  justify-content: space-between;
-}
-.nav_list {
-  margin: 0;
-  padding: 25px;
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-.nav_item {
-  + {
-    .nav_item {
-      margin-left: 1em;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-}
-.nav_link {
-  color: $grey_color;
-  text-decoration: none;
-
-  &:hover {
-    color: $orange-color;
+  
+  ul {
+    list-style: none;
   }
-}
+  
 
-.container-flex {
-  display: flex;
-  flex-direction: row;
-  margin-top: 1%;
-  height: 100vh;
-}
-.column-right {
-  flex: 2;
-  background-color: $background;
-}
-
-.column-left {
-  flex: 1;
-  background-color: $background;
-}
-
-.column-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-
-  .img {
-    margin-top: 5px;
-    width: 50%;
-  }
-}
-
-.form-area {
-  margin-top: 80px;
-
-  .form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: 10px auto;
-    padding: 40px;
-    box-shadow: 0 20px 30px -20px $border-color,
-      0 20px 30px 0px $border-color-grey;
-  }
-
-  .form-field {
-    margin-top: 20px;
-    padding: 8px;
-    border-radius: 10em;
-    border: $border-color-grey 0.1px;
-  }
-
-  .btn {
-    background-color: $orange-color;
-    margin-top: 15px;
-    padding: 5px;
-    color: $background;
-    border: none;
-    border-radius: 10em;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .container-flex {
-    flex-direction: column;
+  
+  img {
     width: 100%;
+    height: auto;
+    margin:0;
+  }
+  :root {
+    --first-color: #FF9D1C;
+    --second-color: #D9B002;
+    --thirth-color: #C9F00A;
+    --fourth-color: #1b1c1b;
+    --fifth-color: #19FAAE;
+  }
+  .container {
+    width: 100vw;
+    display: flex;
+    height: 100vh;
+    
+    
+    
+    .wallpaper {
+        background-image: url(/Src/images/pexels-pavel-1200.jpg);
+        height:100vh;
+        width: 100vw;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+
+        .form{
+            color: var(--fourth-color);
+            background-color: rgba(255, 255, 255, 0.87);     
+            
+            border-radius: 20px;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+
+            h3{
+                margin-top: 12px;
+                margin-bottom: 12px;
+            }
+            button{
+                margin-top: 20px;
+                margin-bottom: 10px;
+                margin-left:auto;
+                margin-right:auto;
+                padding: 10px;
+                width: 100%;
+                order: 1px solid var(--fourth-color);
+                background-color: var(--first-color);
+                border-radius: 15px;
+                a {
+                    text-decoration: none;
+                    color: whitesmoke;
+                    font-weight: bold;
+                    font-size: 1rem;
+
+                  }
+               
+            }
+            input{
+                border-radius:10px;
+                width: 100%;
+                padding: 7px;
+                
+            }
+
+            
+        }
+
+        
+    }
+    
   }
 
-  .form {
-    width: 30%;
-  }
-  .wrapper {
-    margin: 0 0 0.1rem;
-  }
-}
