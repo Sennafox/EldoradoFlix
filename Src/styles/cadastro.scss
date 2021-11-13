@@ -37,10 +37,11 @@
         display: flex;
         align-items:center;
         justify-content: center;
+        background-size: cover;
 
         .form{
-            color: var(--fourth-color);
-            background-color: rgba(255, 255, 255, 0.87);     
+            color: var(--first-color);
+            background-color: rgba(38, 38, 39, 0.9);
             
             border-radius: 20px;
             padding-left: 60px;
@@ -59,7 +60,7 @@
                 margin-right:auto;
                 padding: 10px;
                 width: 100%;
-                order: 1px solid var(--fourth-color);
+                border: 1px solid var(--fourth-color);
                 background-color: var(--first-color);
                 border-radius: 15px;
                 a {
@@ -71,6 +72,13 @@
                   }
                
             }
+            .cancelar{
+              background-color: whitesmoke;
+              margin-top: 10px;
+              a{
+                color: var(--fourth-color);
+              }
+             }
             input{
                 border-radius:10px;
                 width: 100%;
