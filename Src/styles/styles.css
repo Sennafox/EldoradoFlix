@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+:root {
+  --first-color: #FF9D1C;
+  --second-color: #D9B002;
+  --thirth-color: #C9F00A;
+  --fourth-color: #1b1c1b;
+  --fifth-color: #19FAAE;
+}/*# sourceMappingURL=styles.css.map */

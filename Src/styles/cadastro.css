@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+:root {
+  --first-color: #FF9D1C;
+  --second-color: #D9B002;
+  --thirth-color: #C9F00A;
+  --fourth-color: #1b1c1b;
+  --fifth-color: #19FAAE;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  height: 100vh;
+}
+.container .wallpaper {
+  background-image: url(/Src/images/pexels-pavel-1200.jpg);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+.container .wallpaper .form {
+  color: var(--first-color);
+  background-color: rgba(38, 38, 39, 0.9);
+  border-radius: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.container .wallpaper .form h3 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.container .wallpaper .form button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid var(--fourth-color);
+  background-color: var(--first-color);
+  border-radius: 15px;
+}
+.container .wallpaper .form button a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.container .wallpaper .form .cancelar {
+  background-color: whitesmoke;
+  margin-top: 10px;
+}
+.container .wallpaper .form .cancelar a {
+  color: var(--fourth-color);
+}
+.container .wallpaper .form input {
+  border-radius: 10px;
+  width: 100%;
+  padding: 7px;
+}/*# sourceMappingURL=cadastro.css.map */
