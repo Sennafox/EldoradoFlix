@@ -165,6 +165,7 @@ select {
 
   img{
     width: 100%;
+    max-width: 200px;
   }
 
 }
@@ -177,9 +178,8 @@ select {
   color: #FF9D1C;
   max-width: 200px;
   min-width: 200px;
-  width: 25%;
-  padding: 2px;
-  font-size: 0.8em;
+  padding: 0;
+  font-size: 0.7em;
   transition: 0.3s;
 
   &:hover { 

@@ -247,8 +247,9 @@
             const response = await fetch('http://localhost:4567')
             //console.log(response)
             const data = await response.json()
-            console.log(data)
-            show(data)
+            const result = data.results
+            console.log(result)
+            show(result)
         } catch (error) {
             console.log(error)
         }
@@ -256,22 +257,22 @@
 
     getContent()
 
-    function show(results) {
+    function show(movies) {
         
         let cardDescriptionDivEl = ''
-        for (let result of results) {
+        for (let movie of movies) {
             
         let gradeDivEl = document.querySelector("#grade");
 
         let cardDivEl = document.createElement('div');
         cardDivEl.classList.add('card');
-        cardDivEl.innerHTML += `<img src="${result.poster_path}">`;
+        cardDivEl.innerHTML += `<img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}">`;
         let cardDescriptionDivEl = document.createElement('div');
         cardDescriptionDivEl.classList.add('card-description');
-        cardDescriptionDivEl.innerHTML  +=`<h1>${result.title}</h1>`  
-                                        + `<h5>Lançamento:${user.release_date}</h5>`
-                                        + `<h5>Avaliação: ${result.vote_avarage}</h5>`
-                                        + `<h5>Genero: ${user.genre_ids}</h5>`;
+        cardDescriptionDivEl.innerHTML  +=`<h2>${movie.title}</h2>`  
+                                        + `<h5>Lançamento:${movie.release_date}</h5>`
+                                        + `<h5>Avaliação: ${movie.vote_avarage}</h5>`
+                                        + `<h5>Genero: ${movie.genre_ids}</h5>`;
 
             
         let buttonDivEl = document.createElement('div');
