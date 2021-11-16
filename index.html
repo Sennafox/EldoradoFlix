@@ -1,47 +1,288 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Src/css/cadastro.css" />
-    <link rel="stylesheet" href="./Src/css/styles.css" />
-    <title>EldoradoFlix - Cadastro</title>
-  </head>
-  <body>
-    <header>
-      <nav class="nav-content">
-        <ul class="nav_list">
-          <li class="nav_item"><a href="#" class="nav_link">HOME</a></li>
-          <li class="nav_item"><a href="#" class="nav_link">CONTATO</a></li>
-          <li class="nav_item"><a href="#" class="nav_link">LOGIN</a></li>
-            <li class="nav_item"><a href="#" class="nav_link">SOBRE</a></li>
-        </ul>
-      </nav>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EldoradoFlix Home</title>
+    <link rel="stylesheet" href="Src/styles/home.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header class="bg-image">
+        <nav>  
+            <ul class="container">
+              <li><img src="./Src/images/eldorado.png"></li>
+              <li><i class='bx bx-home'></i>Home</li>  
+              <li><i class='bx bx-movie' ></i>Meus filmes</li>  
+              <li class="search"><i class='bx bx-search-alt-2'></i>  
+                <input type="text" class="search-input" placeholder="Search">  
+              </li>  
+              <li><i class='bx bxs-user-pin'></i>Login</li>  
+            </ul>  
+          </nav>
+
+          <div class="banner">
+                <div id="slider">
+                    <img class="selected" src="./Src/images/camera-gradiente-1000px.png">
+                    <img src="./Src/images/pipoca-1000px.jpg">
+                    <img src="./Src/images/movie-theater-1000px.jpg">
+                </div>
+          </div>
+          
     </header>
-    <div class="container-flex">
-      <div class="column-right">
-        <div class="column-content">
-          <img alt="logo" class="img" src="./Src/img/logo.jpg" />
-          <p>Já possui uma conta? <a href="#">Login</a></p>
+
+    <section>
+    <!--Cards de filmes-->
+    <div class="movie-grade">  
+        
+        <div class="grade" id="grade">
+            
+            <div class="separator">
+                <h1><i class='bx bx-camera-movie'></i>FILMES ONLINE</h1>
+                <div class="select">
+                    <h2>Pesquise por gênero:</h2>
+                    <select name="format" id="format">
+                    <option selected disabled>Escolha um genero</option>    
+                    <option value="Action">Ação</option>
+                    <option value="Comedy">Comédia</option>
+                    <option value="Drama">Drama</option>
+                </select>
+                </div>
+            </div>
+            
+
+        <!--<div class="card" id="card">
+        
+                <div class="card-description">
+                        <h1>Nome do Filme</h1>
+                        <img src="Src/images/filmes_logo.jpg">
+                        <h3>Duração: --</h3>
+                        <h5>Avaliação --</h5>
+                        <h3>Genero: --</h3>
+                </div>    
+                <div class="button">
+                        <button>Assistir</button>
+                </div>
+            </div>
+
+            <div class="card">
+        
+                <div class="card-description">
+                    <h1>Nome do Filme</h1>
+                    <img src="Src/images/filmes_logo.jpg">
+                    <h3>Duração: --</h3>
+                    <h5>Avaliação --</h5>
+                    <h3>Genero: --</h3>
+                </div>
+                <div class="button">
+                    <button>Assistir</button>
+                </div>
+            </div>
+            
+            <div class="card">
+        
+                <div class="card-description">
+                    <h1>Nome do Filme</h1>
+                    <img src="Src/images/filmes_logo.jpg">
+                    <h3>Duração: --</h3>
+                    <h5>Avaliação --</h5>
+                    <h3>Genero: --</h3>
+                </div>
+                <div class="button">
+                    <button>Assistir</button>
+                </div>
+            </div>
+            <div class="card">
+        
+                <div class="card-description">
+                    <h1>Nome do Filme</h1>
+                    <img src="Src/images/filmes_logo.jpg">
+                    <h3>Duração: --</h3>
+                    <h5>Avaliação --</h5>
+                    <h3>Genero: --</h3>
+                </div>
+                <div class="button">
+                    <button>Assistir</button>
+                </div>
+            </div>
+            <div class="card">
+        
+                <div class="card-description">
+                    <h1>Nome do Filme</h1>
+                    <img src="Src/images/filmes_logo.jpg">
+                    <h3>Duração: --</h3>
+                    <h5>Avaliação --</h5>
+                    <h3>Genero: --</h3>
+                </div>
+                <div class="button">
+                    <button>Assistir</button>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="column-left">
-        <div class="form-area">
-          <form action="" class="form">
-            <h2>Registre-se</h2>
-            <input type="fullname" placeholder="Nome" class="form-field" />
-            <input type="email" placeholder="Email" class="form-field" />
-            <input type="password" placeholder="Senha" class="form-field" />
-            <input
-              type="password"
-              placeholder="Confirme sua senha"
-              class="form-field"
-            />
-            <input type="submit" class="form-field btn" value="Criar" />
-          </form>
-        </div>
-      </div>
+            <div class="grade">
+
+            <div class="separator">
+                <h1>FILMES ONLINE</h1>
+            </div>
+
+                <div class="card">
+        
+                <div class="card-description">
+                    <h1>Nome do Filme</h1>
+                    <img src="Src/images/filmes_logo.jpg">
+                    <h3>Duração: --</h3>
+                    <h5>Avaliação --</h5>
+                    <h3>Genero: --</h3>
+                </div>
+                <div class="button">
+                    <button>Assistir</button>
+                </div>
+            </div>
+            <div class="card">
+        
+                <div class="card-description">
+                    <h1>Nome do Filme</h1>
+                    <img src="Src/images/filmes_logo.jpg">
+                    <h3>Duração: --</h3>
+                    <h5>Avaliação --</h5>
+                    <h3>Genero: --</h3>
+                </div>
+                <div class="button">
+                    <button>Assistir</button>
+                </div>
+            </div>
+            <div class="card">
+        
+                <div class="card-description">
+                    <h1>Nome do Filme</h1>
+                    <img src="Src/images/filmes_logo.jpg">
+                    <h3>Duração: --</h3>
+                    <h5>Avaliação --</h5>
+                    <h3>Genero: --</h3>
+                </div>
+                <div class="button">
+                    <button>Assistir</button>
+                </div>
+            </div>
+            <div class="card">
+        
+                <div class="card-description">
+                    <h1>Nome do Filme</h1>
+                    <img src="Src/images/filmes_logo.jpg">
+                    <h3>Duração: --</h3>
+                    <h5>Avaliação --</h5>
+                    <h3>Genero: --</h3>
+                </div>
+                <div class="button">
+                    <button>Assistir</button>
+                </div>
+            </div>
+            <div class="card">
+        
+                <div class="card-description">
+                    <h1>Nome do Filme</h1>
+                    <img src="Src/images/filmes_logo.jpg">
+                    <h3>Duração: --</h3>
+                    <h5>Avaliação --</h5>
+                    <h3>Genero: --</h3>
+                </div>
+                <div class="button">
+                    <button>Assistir</button>
+                </div>
+            </div>-->
+
     </div>
-  </body>
+    <div class="pag">
+        <ul class="pagination">
+            <li><a href="#">«</a></li>
+            <li><a href="#">1</a></li>
+            <li><a class="active" href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">»</a></li>
+          </ul>
+    </div>
+    </section>
+    <footer class="footer">
+        <div class="f-container">
+            <div class="footer-row">
+                
+                <div class="footer-col">
+                    <h1>Sigam nossas Redes Sociais!</h1>
+                </div>
+
+                <div class="footer-col">
+                    <h1><i class='bx bxl-instagram' ></i>Instagram</h1>
+                </div>
+                <div class="footer-col">
+                    <h1><i class='bx bxl-facebook-square'></i>Facebook</h1>
+                </div>
+                
+                <div class="footer-col">
+                    <h1><i class='bx bxl-twitter' ></i>Twitter</h1>
+                </div>
+            </div>
+            <div>
+                <h2>Created by Paulo Bittencourt, Sidia Souza e Carlos olimpio</h2>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="./Src/scripts/add-bloco.js" type="text/javascript"></script>
+    <script src="./Src/scripts/remove-bloco.js" type="text/javascript"></script>
+    <script src="./Src/scripts/banner.js" type="text/javascript"></script>
+    <script src="./server.js" type="text/javascript"></script>
+    <!--<script src="./fetchapi.js" type="text/javascript"></script>-->
+</body>
+<script>
+
+    async function getContent(){
+        try {
+            const response = await fetch('http://localhost:4567')
+            //console.log(response)
+            const data = await response.json()
+            console.log(data)
+            show(data)
+        } catch (error) {
+            console.log(error)
+        }
+    }    
+
+    getContent()
+
+    function show(results) {
+        
+        let cardDescriptionDivEl = ''
+        for (let result of results) {
+            
+        let gradeDivEl = document.querySelector("#grade");
+
+        let cardDivEl = document.createElement('div');
+        cardDivEl.classList.add('card');
+        cardDivEl.innerHTML += `<img src="${result.poster_path}">`;
+        let cardDescriptionDivEl = document.createElement('div');
+        cardDescriptionDivEl.classList.add('card-description');
+        cardDescriptionDivEl.innerHTML  +=`<h1>${result.title}</h1>`  
+                                        + `<h5>Lançamento:${user.release_date}</h5>`
+                                        + `<h5>Avaliação: ${result.vote_avarage}</h5>`
+                                        + `<h5>Genero: ${user.genre_ids}</h5>`;
+
+            
+        let buttonDivEl = document.createElement('div');
+        buttonDivEl.classList.add('button1');
+        let buttonEdit = document.createElement('button');
+        buttonEdit.innerText = "Editar";
+        
+        cardDivEl.appendChild(cardDescriptionDivEl);
+        gradeDivEl.appendChild(cardDivEl);
+        }
+    }
+
+</script>
 </html>
